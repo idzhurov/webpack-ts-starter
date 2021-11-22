@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": true, // Generate .d.ts files from TypeScript and JavaScript files in your project.
+    "declarationDir": "./lib", // Specify the output directory for generated declaration files.
+    "module": "commonjs", // Specify what module code is generated.
+    "noImplicitAny": true, // Enable error reporting for expressions and declarations with an implied any type..
+    "lib": ["es7", "es6", "dom"], // Specify a set of bundled library declaration files that describe the target runtime environment.
+    "outDir": "./lib", // Specify an output folder for all emitted files.
+    "target": "es5", // Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+    "moduleResolution": "node", // Specify how TypeScript looks up a file from a given module specifier.
+    "inlineSources": true, // Include source code in the sourcemaps inside the emitted JavaScript.
+    "sourceMap": true, // Create source map files for emitted JavaScript files.
+    "allowSyntheticDefaultImports": true, // Allow 'import x from y' when a module doesn't have a default export.
+    "noEmitOnError":false // allows files to be compiled even if there is an error
+  },
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  },
+  "include": ["src/**/*"], // glob files for the compilator to look for
+  "exclude": ["node_modules", "lib"] // files to ignore(makes the compilation faster)
+}
