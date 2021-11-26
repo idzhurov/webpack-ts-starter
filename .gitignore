@@ -1,5 +1,14 @@
+# mac os finder hidden file
 .DS_Store
+
+# the installed npm packages
 node_modules
+
+# compilation folder if we decide to deploy our package as a library
 lib
+
+# main project compilation folder
 dist
+
+# hidden folder that contains local history from the Local History extension
 .history
